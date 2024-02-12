@@ -1,0 +1,642 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(media/light.jpg) ;
+    color: #333; /* Темный текст */
+    background-size: 100%;
+}
+
+header {
+    background-color: #4a90e2; /* Синий */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #4a90e2; /* Синий */
+    padding: 10px 0;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+    margin-bottom: 10px; /* Добавляем отступ снизу */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s; /* Добавляем плавное изменение цвета при наведении */
+}
+
+a:hover {
+    color: #2ee934; /* Зеленоватый оттенок */
+}
+
+nav ul:hover li:not(:hover) a {
+    opacity: 0.7; /* Уменьшаем прозрачность остальных ссылок */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 20px;
+    max-width: 1500px;
+    margin: 20px auto;
+    line-height: 1.6;
+    background-color: #fff; /* Белый фон */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.699);
+}
+
+.bg-color1 {
+    background-color: #c8d5f6; /* Светло-голубой фон */
+}
+
+.bg-color2 {
+    background-color: #f0f3f8; /* Серый фон */
+}
+
+.bg-color3 {
+    background-color: #ffe6ff; /* Розовый фон */
+}
+
+.info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px; /* Регулируйте отступы по вашему усмотрению */
+}
+
+.info-content {
+    flex: 1;
+    padding: 20px;
+    color: black; /* Черный текст */
+}
+
+.images {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.images img {
+    max-width: 350px; /* Регулируйте размеры изображений по вашему усмотрению */
+    margin: 0 10px; /* Регулируйте отступы между изображениями */
+}
+
+.impact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px; /* Регулируйте отступы по вашему усмотрению */
+}
+
+.impact-content {
+    flex: 1;
+    padding: 20px;
+    color: black; /* Черный текст */
+}
+
+.impact-images {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.impact-images img {
+    max-width: 350px; /* Регулируйте размеры изображений по вашему усмотрению */
+    margin: 0 10px; /* Регулируйте отступы между изображениями */
+}
+
+/* Новый класс "Эксперимент с ЭМИ" */
+.experiment-container {
+    background-color: #c8d5f6; /* Светло-голубой фон */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.801);
+    color: black; /* Черный текст */
+}
+
+.experiment-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align: left;
+}
+
+.experiment-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.experiment-images {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.experiment-images img {
+    max-width: 350px; /* Регулируйте размеры изображений по вашему усмотрению */
+    margin: 0 10px; /* Регулируйте отступы между изображениями */
+}
+
+.experiment-container > ul > li {
+    display: list-item;
+}
+
+.experiment-container > p > b {
+    font-size: 30px;
+}
+
+
+.contact-info > ul > li {
+    display: list-item;
+}
+
+.presentation-photos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.presentation-photos > .column > img {
+    width: 400px;
+}
+/* Медиа-запросы для адаптации под различные устройства */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .images img,
+    .impact-images img,
+    .experiment-images img,
+    .presentation-photos > .column > img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+@media (max-width: 1440px) {
+    header {
+        padding: 17px;
+        text-align: center;
+    }
+
+    a {
+        font-size: 14px;
+    }
+    
+    
+    .content {
+        padding: 17px;
+        max-width: 1250px;
+        margin: 17px auto;
+    }
+
+    .info-section {
+        padding: 35px 15px; /* Регулируйте отступы по вашему усмотрению */
+    }
+    
+    .info-content {
+        padding: 15px;
+    }
+    
+    
+    .images img {
+        max-width: 300px; /* Регулируйте размеры изображений по вашему усмотрению */
+        margin: 0 8px; /* Регулируйте отступы между изображениями */
+    }
+    
+    .impact-section {
+        padding: 35px 15px; /* Регулируйте отступы по вашему усмотрению */
+    }
+    
+    .impact-content {
+        padding: 15px;
+    }
+    
+    
+    .impact-images img {
+        max-width: 250px; /* Регулируйте размеры изображений по вашему усмотрению */
+        margin: 0 8px; /* Регулируйте отступы между изображениями */
+    }
+    
+    /* Новый класс "Эксперимент с ЭМИ" */
+    .experiment-container {
+        padding: 16px;
+        margin: 16px 0;
+    }
+    
+    .experiment-section {
+        padding: 16px;
+    }
+    
+    .experiment-content {
+        padding-right: 15px;
+    }
+    
+    
+    .experiment-images img {
+        max-width: 250px; /* Регулируйте размеры изображений по вашему усмотрению */
+        margin: 0 8px; /* Регулируйте отступы между изображениями */
+    }
+
+    
+    .experiment-container > p > b {
+        font-size: 24px;
+    }
+    
+    .presentation-photos {
+        margin-top: 16px;
+    }
+    
+    
+    
+    .presentation-photos > .column > img {
+        width: 250px;
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    header {
+        padding: 14px;
+        text-align: center;
+    }
+
+    a {
+        font-size: 14px;
+    }
+    
+    
+    .content {
+        padding: 17px;
+        max-width: 1250px;
+        margin: 17px auto;
+    }
+
+    .info-section {
+        padding: 30px 13px; /* Регулируйте отступы по вашему усмотрению */
+    }
+    
+    .info-content {
+        padding: 13px;
+    }
+    
+    
+    .images img {
+        max-width: 250px; /* Регулируйте размеры изображений по вашему усмотрению */
+        margin: 0 6px; /* Регулируйте отступы между изображениями */
+    }
+    
+    .impact-section {
+        padding: 30px 12px; /* Регулируйте отступы по вашему усмотрению */
+    }
+    
+    .impact-content {
+        padding: 13px;
+    }
+    
+    
+    .impact-images img {
+        max-width: 200px; /* Регулируйте размеры изображений по вашему усмотрению */
+        margin: 0 8px; /* Регулируйте отступы между изображениями */
+    }
+    
+    /* Новый класс "Эксперимент с ЭМИ" */
+    .experiment-container {
+        padding: 13px;
+        margin: 13px 0;
+    }
+    
+    .experiment-section {
+        padding: 13px;
+    }
+    
+    .experiment-content {
+        padding-right: 12px;
+    }
+    
+    
+    .experiment-images img {
+        max-width: 200px; /* Регулируйте размеры изображений по вашему усмотрению */
+        margin: 0 4px; /* Регулируйте отступы между изображениями */
+    }
+
+    
+    .experiment-container > p > b {
+        font-size: 20px;
+    }
+    
+    .presentation-photos {
+        margin-top: 14px;
+    }
+    
+    
+    
+    .presentation-photos > .column > img {
+        width: 200px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 14px;
+        text-align: center;
+    }
+
+    a {
+        font-size: 10px;
+    }
+    
+    li {
+        display: inline;
+        margin-right: 16px;
+        margin-bottom: 7px;
+    }
+    
+    .content {
+        padding: 14px;
+        max-width: 700px;
+        margin: 14px auto;
+    }
+
+    .info-section {
+        padding: 20px 20px; /* Регулируйте отступы по вашему усмотрению */
+    }
+    
+    .info-content {
+        padding: 10px;
+    }
+    
+    
+    .images img {
+        max-width: 150px; /* Регулируйте размеры изображений по вашему усмотрению */
+        margin: 0 6px; /* Регулируйте отступы между изображениями */
+    }
+    
+    .impact-section {
+        padding: 20px 10px; /* Регулируйте отступы по вашему усмотрению */
+    }
+    
+    .impact-content {
+        padding: 10px;
+    }
+    
+    
+    .impact-images img {
+        max-width: 150px; /* Регулируйте размеры изображений по вашему усмотрению */
+        margin: 0 8px; /* Регулируйте отступы между изображениями */
+    }
+    
+    /* Новый класс "Эксперимент с ЭМИ" */
+    .experiment-container {
+        padding: 12px;
+        margin: 12px 0;
+    }
+    
+    .experiment-section {
+        padding: 12px;
+    }
+    
+    .experiment-content {
+        padding-right: 11px;
+    }
+    
+    
+    .experiment-images img {
+        max-width: 150px; /* Регулируйте размеры изображений по вашему усмотрению */
+        margin: 0 8px; /* Регулируйте отступы между изображениями */
+    }
+
+    
+    .experiment-container > p > b {
+        font-size: 15px;
+    }
+    
+    .presentation-photos {
+        margin-top: 12px;
+    }
+    
+    
+    
+    .presentation-photos > .column > img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 425px) {
+    header {
+        padding: 6px;
+        text-align: center;
+    }
+
+    a {
+        font-size: 15px;
+    }
+    
+    li {
+        display: list-item;
+        margin-right: 16px;
+        margin-bottom: 4px;
+    }
+    
+    .content {
+        padding: 9px;
+        max-width: 425px;
+        margin: 14px auto;
+    }
+
+    .info-section {
+        padding: 13px 13px; /* Регулируйте отступы по вашему усмотрению */
+    }
+    
+    .info-content {
+        padding: 5px;
+    }
+    
+    
+    .images img {
+        max-width: 60px; /* Регулируйте размеры изображений по вашему усмотрению */
+        margin: 0 2px; /* Регулируйте отступы между изображениями */
+    }
+    
+    .impact-section {
+        padding: 12px 6px; /* Регулируйте отступы по вашему усмотрению */
+    }
+    
+    .impact-content {
+        padding: 5px;
+    }
+    
+    
+    .impact-images img {
+        max-width: 80px; /* Регулируйте размеры изображений по вашему усмотрению */
+        margin: 0 4px; /* Регулируйте отступы между изображениями */
+    }
+    
+    /* Новый класс "Эксперимент с ЭМИ" */
+    .experiment-container {
+        padding: 8px;
+        margin: 8px 0;
+    }
+    
+    .experiment-section {
+        padding: 8px;
+    }
+    
+    .experiment-content {
+        padding-right: 6px;
+    }
+    
+    
+    .experiment-images img {
+        max-width: 80px; /* Регулируйте размеры изображений по вашему усмотрению */
+        margin: 0 8px; /* Регулируйте отступы между изображениями */
+    }
+
+    
+    .experiment-container > p > b {
+        font-size: 20px;
+    }
+    
+    .presentation-photos {
+        margin-top: 8px;
+    }
+    
+    
+    
+    .presentation-photos > .column > img {
+        width: 80px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    header {
+        padding: 3px;
+        text-align: center;
+    }
+
+    a {
+        font-size: 15px;
+    }
+    
+    li {
+        display: list-item;
+        margin-right: 6px;
+        margin-bottom: 1px;
+    }
+    
+    .content {
+        padding: 5px;
+        max-width: 320px;
+        margin: 10px auto;
+    }
+
+    .info-section {
+        padding: 10px 10px; /* Регулируйте отступы по вашему усмотрению */
+    }
+    
+    .info-content {
+        padding: 1px;
+    }
+    
+    
+    .images img {
+        max-width: 70px; /* Регулируйте размеры изображений по вашему усмотрению */
+        margin: 0 6px; /* Регулируйте отступы между изображениями */
+    }
+    
+    .impact-section {
+        padding: 8px 4px; /* Регулируйте отступы по вашему усмотрению */
+    }
+    
+    .impact-content {
+        padding: 3px;
+    }
+    
+    
+    .impact-images img {
+        max-width: 70px; /* Регулируйте размеры изображений по вашему усмотрению */
+        margin: 0 6px; /* Регулируйте отступы между изображениями */
+    }
+    
+    /* Новый класс "Эксперимент с ЭМИ" */
+    .experiment-container {
+        padding: 6px;
+        margin: 6px 0;
+    }
+    
+    .experiment-section {
+        padding: 6px;
+    }
+    
+    .experiment-content {
+        padding-right: 6px;
+    }
+    
+    
+    .experiment-images img {
+        max-width: 70px; /* Регулируйте размеры изображений по вашему усмотрению */
+        margin: 0 6px; /* Регулируйте отступы между изображениями */
+    }
+
+    
+    .experiment-container > p > b {
+        font-size: 15px;
+    }
+    
+    .presentation-photos {
+        margin-top: 6px;
+    }
+    
+    
+    
+    .presentation-photos > .column > img {
+        width: 70px;
+    }
+}
